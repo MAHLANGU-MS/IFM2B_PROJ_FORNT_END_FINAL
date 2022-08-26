@@ -40,7 +40,7 @@
 <body>
 	 <form id="form1" runat="server">
 
-	<!-- HEADER -->
+	<%--<!-- HEADER -->
 		<header>
 			<!-- TOP HEADER -->
 			<div id="top-header">
@@ -71,7 +71,7 @@
 								</a>
 							</div>
 						</div>
-						<!-- /LOGO -->
+						<!-- /LOGO -->--%>
 
 						
 					</div>
