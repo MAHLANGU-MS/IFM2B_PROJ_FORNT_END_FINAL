@@ -60,7 +60,6 @@ C:\Users\User\source\repos\PracXFinal\PracXFinal\obj\Debug\PracXFinal.pdb
 C:\Users\Quinton\Documents\IFM2B_PROJ_FRONT_END_FINAL\PracXFinal\PracXFinal\bin\PracXFinal.dll.config
 C:\Users\Quinton\Documents\IFM2B_PROJ_FRONT_END_FINAL\PracXFinal\PracXFinal\bin\PracXFinal.dll
 C:\Users\Quinton\Documents\IFM2B_PROJ_FRONT_END_FINAL\PracXFinal\PracXFinal\bin\PracXFinal.pdb
-C:\Users\Quinton\Documents\IFM2B_PROJ_FRONT_END_FINAL\PracXFinal\PracXFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\Quinton\Documents\IFM2B_PROJ_FRONT_END_FINAL\PracXFinal\PracXFinal\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Quinton\Documents\IFM2B_PROJ_FRONT_END_FINAL\PracXFinal\PracXFinal\obj\Debug\PracXFinal.csproj.AssemblyReference.cache
 C:\Users\Quinton\Documents\IFM2B_PROJ_FRONT_END_FINAL\PracXFinal\PracXFinal\obj\Debug\PracXFinal.csproj.CoreCompileInputs.cache
