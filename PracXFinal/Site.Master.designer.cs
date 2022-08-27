@@ -42,22 +42,13 @@ namespace PracXFinal
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl cart;
 
         /// <summary>
-        /// nav_bar control.
+        /// cat_menu_item control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl nav_bar;
-
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cat_menu_item;
 
         /// <summary>
         /// ContentPlaceHolder1 control.

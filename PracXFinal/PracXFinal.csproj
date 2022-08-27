@@ -114,6 +114,7 @@
     <Content Include="Contact.aspx" />
     <Content Include="css\about_style.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\contact_style.css" />
     <Content Include="css\font-awesome.min.css" />
     <Content Include="css\nouislider.min.css" />
     <Content Include="css\slick-theme.css" />

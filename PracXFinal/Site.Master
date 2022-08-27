@@ -32,6 +32,8 @@
 
 		<link type="text/css" rel="stylesheet" href="css/about_style.css"/>
 
+		<link type="text/css" rel="stylesheet" href="css/contact_style.css"/>
+
 		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -97,7 +99,7 @@
 									<a href="#">
 										<i class="fa fa-heart-o"></i>
 										<span id="wishllist" runat="server" visible="true">Your Wishlist</span>
-										<div class="qty">2</div>
+										<%--<div class="qty">2</div>x--%>
 									</a>
 								</div>
 								<!-- /Wishlist -->
@@ -107,7 +109,7 @@
 									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true" href="#">
 										<i class="fa fa-shopping-cart"></i>
 										<span id="cart" runat="server" visible="true">Your Cart</span>
-										<div class="qty" >3</div>
+										<%--<div class="qty" >3</div>--%>
 									</a>
 									<div class="cart-dropdown">
 										<div class="cart-list">
@@ -170,11 +172,25 @@
 			<!-- container -->
 			<div class="container">
 				<!-- responsive-nav -->
-				<div id="responsive-nav">
+				<div id="responsive-nav" class="cat_dropdown">
 					<!-- NAV -->
-					<ul class="main-nav nav navbar-nav" id="nav_bar" runat="server" visible="true">
+					<ul class="main-nav nav navbar-nav" >
 						<li class="active"><a href="index.aspx">Home</a></li>
-						<li><a href="#">Categories</a></li>
+						<li><a href="#"> Category</a>
+							<div class="cat-menu" id="cat_menu_item" runat="server"   >			
+								<ul>
+									<li>
+										<a href="#">NAMEname</a>
+									</li>
+									<li>
+										<a href="#">NAMEname</a>
+									</li>
+									<li>
+										<a href="#">NAMEname</a>
+									</li>
+								</ul>
+							</div>
+						</li>	
 						<li><a href="Product.aspx">Products</a></li>
 						<li><a href="#">Hot Deals</a></li>
 						<li><a href="Contact.aspx">Contact</a></li>
@@ -188,7 +204,6 @@
 		</nav>
 		<!-- /NAVIGATION -->
 
-    <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
@@ -205,12 +220,10 @@
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
 								<h3 class="footer-title">About Us</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.<a href="About.aspx">...Read more</Read></a></p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.<a class="footer-links" href="About.aspx">...Read more</a></p>
 								
 							</div>
 						</div>
-
-						
 
 						<div class="clearfix visible-xs"></div>
 
@@ -218,7 +231,7 @@
 							<div class="footer">
 								<h3 class="footer-title">Information</h3>
 								<ul class="footer-links">
-									<li><a href="About.aspx">Contact Us</a></li>
+									<li><a href="Contact.aspx">Contact Us</a></li>
 									<li><a href="#">Privacy Policy</a></li>
 									<li><a href="#">Orders and Returns</a></li>
 									<li><a href="#">Terms & Conditions</a></li>
@@ -238,21 +251,13 @@
 							</div>
 						</div>
 
-						<%--<div class="">
-						<h3>Follow Us</h3>
-						<ul>
-							<li><i class="fa-brands fa-twitter"></i><a href="" >Twitter</a></li>
-							<li><a href=""></a>Facebook</li>
-							<li><a href=""></a>Instagram</li>
-						</ul>
-					</div>--%>
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
 								<h3 class="footer-title">Follow Us</h3>
 								<ul class="footer-links">
 							<li><i class="fa-brands fa-twitter"></i><a href="#" >Twitter</a></li>
-							<li><i class="fa-brands fa-facebook"></i><a href="#"></a>Facebook</li>
-							<li><i class="fa-brands fa-instagram"></i><a href="#"></a>Instagram</li>
+							<li><i class="fa-brands fa-facebook"></i><a href="#" >Facebook</a></li>
+							<li><i class="fa-brands fa-instagram"></i><a href="#" >Instagram</a></li>
 						</ul>
 							</div>
 						</div>
@@ -304,6 +309,5 @@
 		<script src="js/main.js"></script>
 		<script src="https://kit.fontawesome.com/079140c5a9.js" crossorigin="anonymous"></script>
 
-    </form>
 </body>
 </html>

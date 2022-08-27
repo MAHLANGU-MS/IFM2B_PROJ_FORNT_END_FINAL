@@ -637,9 +637,9 @@ textarea.input {
   padding: 20px 0px;
 }
 
-.main-nav>li>a:hover, .main-nav>li>a:focus, .main-nav>li.active>a {
-  color: #D10024;
-  background-color: transparent;
+.main-nav > li > a:hover, .main-nav > li > a:focus, .main-nav > li.active > a {
+    color: #D10024;
+    background-color: transparent;
 }
 
 .main-nav>li>a:after {
@@ -705,6 +705,10 @@ textarea.input {
   .main-nav>li>a {
     padding: 15px;
     color: #FFF;
+  }
+
+  .cat-dropdown ul li:hover{
+      color:blue;
   }
 }
 
@@ -2187,4 +2191,16 @@ textarea.input {
     float: none;
     margin-top: 10px;
   }
+}
+
+/*CATEGORY DROPDOWN*/
+.cat-menu{
+    display:none;
+}
+
+.main-nav > li :hover.cat-menu>li{
+    display:block;
+    position:absolute;
+    color: #D10024;
+    background-color: transparent;
 }
