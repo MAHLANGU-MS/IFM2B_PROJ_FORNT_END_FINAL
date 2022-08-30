@@ -11,17 +11,8 @@ namespace PracXFinal
 {
 
 
-    public partial class Login
+    public partial class Register
     {
-
-        /// <summary>
-        /// form1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
         /// fname control.
@@ -78,6 +69,15 @@ namespace PracXFinal
         protected global::System.Web.UI.HtmlControls.HtmlSelect type;
 
         /// <summary>
+        /// reguser control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlForm reguser;
+
+        /// <summary>
         /// btnReg control.
         /// </summary>
         /// <remarks>
@@ -85,5 +85,14 @@ namespace PracXFinal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnReg;
+
+        /// <summary>
+        /// reg_failed control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl reg_failed;
     }
 }
