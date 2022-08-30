@@ -23,7 +23,7 @@ namespace PracXFinal
                 display += "<div class='col-md-4 col-xs-6'>";
                 display += "<div class='product'>";
                 display += "<div class='product-img'>";
-                display += "<img src='" + p.PrImage + "' alt='Image'>";
+                display += "<img src='"+p.PrImage+"' alt='Image'>";
                 display += "<div class='product-label'>";
                 display += "<span class='sale'>-30%</span>";
                 display += "<span class='new'>NEW</span>";
@@ -46,6 +46,8 @@ namespace PracXFinal
 
             }
             all_prods.InnerHtml = display;
+
+            
         }
     }
 }

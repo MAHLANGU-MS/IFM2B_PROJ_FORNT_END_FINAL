@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PracXFinal.ServiceReference1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,16 +19,33 @@ namespace PracXFinal
 
         protected void btnReg_Click(object sender, EventArgs e)
         {
+
+            Service1Client sr = new Service1Client();
+
             if(pass.Value == repass.Value)
             {
-                //sr has not been created yet 
-                /*bool result = sr.register(fname.Value, lname.Value, email.Value, pass.Value);
 
-                if(result == true)
+                var newUser = new User
+                {
+                    Name = fname.Value + " " + lname.Value,
+                    Email = email.Value,
+                    Password = pass.Value,
+                    UserType = type.Value
+                };
+
+                int result = sr.register(newUser);
+
+                if(result == 1)
                 {
                     Response.Redirect("login.aspx");
 
-                }*/
+                }else if (result==-1)
+                {
+                    //user not added 
+                }else if (result == 0)
+                {
+                    //user already exists 
+                }
             }
         }
     }

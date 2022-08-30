@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PracXFinal.ServiceReference1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,22 @@ namespace PracXFinal
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
+            Service1Client sr = new Service1Client();
 
+            
+
+                User result = sr.Login(email.Value, pass.Value);
+
+            if (result != null)
+            {
+                Session["LoggedInID"] = result.Id;
+                Session["AdminValue"] = result.UserType;
+                Response.Redirect("index.aspx");
+            }
+            else
+            {
+                //show that they dont have an account
+            }
         }
     }
 }

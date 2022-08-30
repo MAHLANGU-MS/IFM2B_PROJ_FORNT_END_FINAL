@@ -131,6 +131,12 @@
 							<div class="form-group">
 								<input class="input" type="password" name="repass" placeholder="Re-enter password" id="repass" required="required" runat="server">
 							</div>
+
+							<label for="type">Choose a type:</label>
+								<select name="type" id="type" required="required" runat="server">
+									<option value="Customer">Customer</option>
+									<option value="Manager">Manager</option>
+								</select>
 							
 							
 						</div>
