@@ -11,7 +11,7 @@ namespace PracXFinal
 {
 
 
-    public partial class Product
+    public partial class SingleProduct
     {
     }
 }
