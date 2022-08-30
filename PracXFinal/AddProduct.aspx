@@ -52,8 +52,10 @@
 						<!-- /Billing Details -->
 
 						<!-- <a href="#" class="primary-btn order-submit">Register</a> -->
-						
+						<form id="AddProd"  runat="server">
+
 						<asp:Button ID="btnAddP" runat="server" Text="Add product" href="#" class="primary-btn order-submit"/>
+						</form>
 							
 						
 					</div>

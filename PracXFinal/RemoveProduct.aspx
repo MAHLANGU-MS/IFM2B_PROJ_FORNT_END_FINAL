@@ -26,8 +26,10 @@
 						<!-- /Billing Details -->
 
 						<!-- <a href="#" class="primary-btn order-submit">Register</a> -->
-						
+						<form id="RemoveProd"  runat="server">
+
 						<asp:Button ID="btnRemP" runat="server" Text="Remove product" href="#" class="primary-btn order-submit"/>
+						</form>
 							
 						
 					</div>

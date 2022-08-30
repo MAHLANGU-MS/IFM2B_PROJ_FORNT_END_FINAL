@@ -193,9 +193,11 @@
 							</div>
 						</li>	
 						<li><a href="Product.aspx">Products</a></li>
-						<li><a href="#">Hot Deals</a></li>
-						<li><a href="Contact.aspx">Contact</a></li>
+						<li ><a href="Contact.aspx">Contact</a></li>
 						<li><a href="About.aspx">About</a></li>
+						<li id="add" runat="server" visible="false"><a href="AddProduct.aspx">Add Product</a></li>
+						<li id="edit" runat="server" visible="false"><a href="EditProduct.aspx">Edit Product</a></li>
+						<li id="remove" runat="server" visible="false"><a href="RemoveProduct.aspx">Remove Product</a></li>
 					</ul>
 					<!-- /NAV -->
 				</div>

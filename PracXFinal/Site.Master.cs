@@ -29,7 +29,9 @@ namespace PracXFinal
 
                 if (admin.Equals("Manager"))
                 {
-                    
+                    add.Visible = true;
+                    edit.Visible = true;
+                    remove.Visible = true;
                 }
 
 
