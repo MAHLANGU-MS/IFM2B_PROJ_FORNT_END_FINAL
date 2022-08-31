@@ -338,10 +338,10 @@ namespace PracXFinal.ServiceReference1 {
         System.Threading.Tasks.Task<PracXFinal.ServiceReference1.User> LoginAsync(string email, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/register", ReplyAction="http://tempuri.org/IService1/registerResponse")]
-        int register(string FirstName, string Surname, string Email, string password, string user);
+        int register(PracXFinal.ServiceReference1.User user);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/register", ReplyAction="http://tempuri.org/IService1/registerResponse")]
-        System.Threading.Tasks.Task<int> registerAsync(string FirstName, string Surname, string Email, string password, string user);
+        System.Threading.Tasks.Task<int> registerAsync(PracXFinal.ServiceReference1.User user);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getAllProducts", ReplyAction="http://tempuri.org/IService1/getAllProductsResponse")]
         PracXFinal.ServiceReference1.Product[] getAllProducts();
@@ -391,12 +391,12 @@ namespace PracXFinal.ServiceReference1 {
             return base.Channel.LoginAsync(email, password);
         }
         
-        public int register(string FirstName, string Surname, string Email, string password, string user) {
-            return base.Channel.register(FirstName, Surname, Email, password, user);
+        public int register(PracXFinal.ServiceReference1.User user) {
+            return base.Channel.register(user);
         }
         
-        public System.Threading.Tasks.Task<int> registerAsync(string FirstName, string Surname, string Email, string password, string user) {
-            return base.Channel.registerAsync(FirstName, Surname, Email, password, user);
+        public System.Threading.Tasks.Task<int> registerAsync(PracXFinal.ServiceReference1.User user) {
+            return base.Channel.registerAsync(user);
         }
         
         public PracXFinal.ServiceReference1.Product[] getAllProducts() {

@@ -19,11 +19,7 @@
   <xs:element name="register">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="Surname" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
-        <xs:element minOccurs="0" name="user" nillable="true" type="xs:string" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="user" nillable="true" type="q2:User" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -42,7 +38,7 @@
   <xs:element name="getAllProductsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsResult" nillable="true" type="q2:ArrayOfProduct" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsResult" nillable="true" type="q3:ArrayOfProduct" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -56,7 +52,7 @@
   <xs:element name="getProductResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getProductResult" nillable="true" type="q3:Product" />
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getProductResult" nillable="true" type="q4:Product" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

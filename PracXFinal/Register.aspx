@@ -16,9 +16,9 @@
 							<div class="section-title">
 								<h3 class="title">Register</h3>
 							</div>
-							<div class="form-group" runat="server">
-								<input class="input" type="text" name="fname" placeholder="First Name" id="fname" required="required" runat="server">
-							</div>
+							<%--<div class="form-group" runat="server">--%>
+								<input class="form-control" type="text" placeholder="First Name" id="fname1" required="required" runat="server">
+							<%--</div>--%>
 							<div class="form-group">
 								<input class="input" type="text" name="lname" placeholder="Last Name" id="lname" required="required" runat="server">
 							</div>
