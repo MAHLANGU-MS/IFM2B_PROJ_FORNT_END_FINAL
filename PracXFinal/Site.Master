@@ -192,7 +192,7 @@
 								</ul>
 							</div>
 						</li>	
-						<li><a href="Product.aspx">Products</a></li>
+						<li><a href="AllProducts.aspx">Products</a></li>
 						<li ><a href="Contact.aspx">Contact</a></li>
 						<li><a href="About.aspx">About</a></li>
 						<li id="add" runat="server" visible="false"><a href="AddProduct.aspx">Add Product</a></li>

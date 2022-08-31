@@ -44,7 +44,7 @@ namespace PracXFinal
                     else if (result == -1)
                     {
                         //user not added 
-                //    reg_failed.Visible = true;
+                        //    reg_failed.Visible = true;
                     }
                     else if (result == 0)
                     {
@@ -54,21 +54,21 @@ namespace PracXFinal
                 }
 
 
-                //int result = sr.register(fname1.Value,lname.Value,email.Value,pass.Value,type.Value);
+                //int result = sr.register(fname1.Value, lname.Value, email.Value, pass.Value, type.Value);
 
-                //if (result == 1)
-                //{
-                //    Response.Redirect("login.aspx");
+                //    if (result == 1)
+                //    {
+                //        Response.Redirect("login.aspx");
 
-                //}
-                //else if (result == -1)
-                //{
+                //    }
+                //    else if (result == -1)
+                //    {
 
-                //    //user not added 
+                //        //user not added 
 
-                //}
+                //    }
 
-            }
+                }
         }
 
     }
