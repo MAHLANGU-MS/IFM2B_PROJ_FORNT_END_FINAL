@@ -26,15 +26,35 @@ namespace PracXFinal
                 if (pass.Value == repass.Value)
                 {
 
-                    var newUser = new User
-                    {
-                        Name = fname1.Value + " " + lname.Value,
-                        Email = email.Value,
-                        Password = pass.Value,
-                        UserType = type.Value
-                    };
+                    //var newUser = new User
+                    //{
+                    //    Name = fname.Value, 
+                    //    Surname = lname.Value,
+                    //    Email = email.Value,
+                    //    Password = pass.Value,
+                    //    UserType = type.Value
+                    //};
 
-                    int result = sr.register(newUser);
+                    //int result = sr.register(newUser);
+
+                    //if (result == 1)
+                    //{
+                    //    Response.Redirect("login.aspx");
+
+                    //}
+                    //else if (result == -1)
+                    //{
+                    //    //user not added 
+                    //    //    reg_failed.Visible = true;
+                    //}
+                    //else if (result == 0)
+                    //{
+                    //    //user already exists
+                    //    //
+                    //}
+
+
+                    int result = sr.register(fname.Value, lname.Value, email.Value, pass.Value, type.Value);
 
                     if (result == 1)
                     {
@@ -43,32 +63,14 @@ namespace PracXFinal
                     }
                     else if (result == -1)
                     {
+
                         //user not added 
-                        //    reg_failed.Visible = true;
+                        reg_failed.Visible = true;
+
                     }
-                    else if (result == 0)
-                    {
-                        //user already exists
-                        //
-                    }
-                }
-
-
-                //int result = sr.register(fname1.Value, lname.Value, email.Value, pass.Value, type.Value);
-
-                //    if (result == 1)
-                //    {
-                //        Response.Redirect("login.aspx");
-
-                //    }
-                //    else if (result == -1)
-                //    {
-
-                //        //user not added 
-
-                //    }
 
                 }
+            }
         }
 
     }

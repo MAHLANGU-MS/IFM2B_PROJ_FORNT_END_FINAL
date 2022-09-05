@@ -15,13 +15,22 @@ namespace PracXFinal
     {
 
         /// <summary>
-        /// fname1 control.
+        /// reguser control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText fname1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm reguser;
+
+        /// <summary>
+        /// fname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText fname;
 
         /// <summary>
         /// lname control.
@@ -67,15 +76,6 @@ namespace PracXFinal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlSelect type;
-
-        /// <summary>
-        /// reguser control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm reguser;
 
         /// <summary>
         /// btnReg control.
