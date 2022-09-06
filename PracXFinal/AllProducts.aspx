@@ -11,19 +11,45 @@
 			<form id="d" runat="server" >
 			<div id="aside" class="col-md-3">
 						<!-- aside Widget -->
-						<div class="aside">
+					<%--	<div class="aside">
 							<h3 class="aside-title">Categories</h3>
 							<div class="checkbox-filter">
 								<div class="input-checkbox">
-								<asp:CheckBoxList ID="CheckBoxList1" runat="server">
-									<asp:ListItem>
-										Name
+								<asp:CheckBoxList ID="CheckBoxList1" runat="server" OnSelectedIndexChanged="CheckBoxList1_SelectedIndexChanged" AutoPostBack="true" >
+									<asp:ListItem Value="1">
+										Novels
+									</asp:ListItem>
+									<asp:ListItem Value="2">
+										E-books
+									</asp:ListItem>
+									<asp:ListItem Value="3">
+										AudioBooks
 									</asp:ListItem>
 								</asp:CheckBoxList>
 								</div>
+
 							</div>
-						</div>
+						</div>--%>
 						<!-- /aside Widget -->
+
+						<!-- aside Widget -->
+						<div class="aside">
+							<h3 class="aside-title">Categories</h3>
+
+								<asp:CheckBoxList ID="CheckBoxList1" runat="server" OnSelectedIndexChanged="CheckBoxList1_SelectedIndexChanged" AutoPostBack="true" >
+									<asp:ListItem Value="0">
+										Novels
+									</asp:ListItem>
+									<asp:ListItem Value="1">
+										E-books
+									</asp:ListItem>
+									<asp:ListItem Value="2">
+										AudioBooks
+									</asp:ListItem>
+								</asp:CheckBoxList>
+
+							</div>
+						
 
 						<div class="aside">
 							<h3 class="aside-title">Price</h3>
