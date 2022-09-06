@@ -1395,11 +1395,24 @@ textarea.input {
 	Product view
 \*----------------------------*/
 
+
+.sing_prod{
+    padding : 3.5rem;
+}
+
+.filter_btn{
+    padding : 1.5rem;
+    display :flex;
+   justify-content: center;
+   align-items :center;
+}
+
 #product-main-img .slick-prev {
-  -webkit-transform: translateX(-15px);
-  -ms-transform: translateX(-15px);
-  transform: translateX(-15px);
-  left: 15px;
+    -webkit-transform: translateX(-15px);
+    -ms-transform: translateX(-15px);
+    transform: translateX(-15px);
+    left: 15px;
+    padding: 3rem;
 }
 
 #product-main-img .slick-next {

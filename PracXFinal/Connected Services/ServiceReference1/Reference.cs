@@ -338,10 +338,10 @@ namespace PracXFinal.ServiceReference1 {
         System.Threading.Tasks.Task<PracXFinal.ServiceReference1.User> LoginAsync(string email, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/register", ReplyAction="http://tempuri.org/IService1/registerResponse")]
-        int register(string name, string surname, string email, string password, string user);
+        int register(PracXFinal.ServiceReference1.User user);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/register", ReplyAction="http://tempuri.org/IService1/registerResponse")]
-        System.Threading.Tasks.Task<int> registerAsync(string name, string surname, string email, string password, string user);
+        System.Threading.Tasks.Task<int> registerAsync(PracXFinal.ServiceReference1.User user);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getAllProducts", ReplyAction="http://tempuri.org/IService1/getAllProductsResponse")]
         PracXFinal.ServiceReference1.Product[] getAllProducts();
@@ -354,6 +354,30 @@ namespace PracXFinal.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getProduct", ReplyAction="http://tempuri.org/IService1/getProductResponse")]
         System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product> getProductAsync(int ID);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getAllProductsAlphabetically", ReplyAction="http://tempuri.org/IService1/getAllProductsAlphabeticallyResponse")]
+        PracXFinal.ServiceReference1.Product[] getAllProductsAlphabetically();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getAllProductsAlphabetically", ReplyAction="http://tempuri.org/IService1/getAllProductsAlphabeticallyResponse")]
+        System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product[]> getAllProductsAlphabeticallyAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getAllProductsByPrice", ReplyAction="http://tempuri.org/IService1/getAllProductsByPriceResponse")]
+        PracXFinal.ServiceReference1.Product[] getAllProductsByPrice();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getAllProductsByPrice", ReplyAction="http://tempuri.org/IService1/getAllProductsByPriceResponse")]
+        System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product[]> getAllProductsByPriceAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getAllProductsPriceFiltered", ReplyAction="http://tempuri.org/IService1/getAllProductsPriceFilteredResponse")]
+        PracXFinal.ServiceReference1.Product[] getAllProductsPriceFiltered(int min, int max);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getAllProductsPriceFiltered", ReplyAction="http://tempuri.org/IService1/getAllProductsPriceFilteredResponse")]
+        System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product[]> getAllProductsPriceFilteredAsync(int min, int max);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getAllProductsCategoryFiltered", ReplyAction="http://tempuri.org/IService1/getAllProductsCategoryFilteredResponse")]
+        PracXFinal.ServiceReference1.Product[] getAllProductsCategoryFiltered(char aORnORe);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getAllProductsCategoryFiltered", ReplyAction="http://tempuri.org/IService1/getAllProductsCategoryFilteredResponse")]
+        System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product[]> getAllProductsCategoryFilteredAsync(char aORnORe);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -391,12 +415,12 @@ namespace PracXFinal.ServiceReference1 {
             return base.Channel.LoginAsync(email, password);
         }
         
-        public int register(string name, string surname, string email, string password, string user) {
-            return base.Channel.register(name, surname, email, password, user);
+        public int register(PracXFinal.ServiceReference1.User user) {
+            return base.Channel.register(user);
         }
         
-        public System.Threading.Tasks.Task<int> registerAsync(string name, string surname, string email, string password, string user) {
-            return base.Channel.registerAsync(name, surname, email, password, user);
+        public System.Threading.Tasks.Task<int> registerAsync(PracXFinal.ServiceReference1.User user) {
+            return base.Channel.registerAsync(user);
         }
         
         public PracXFinal.ServiceReference1.Product[] getAllProducts() {
@@ -413,6 +437,38 @@ namespace PracXFinal.ServiceReference1 {
         
         public System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product> getProductAsync(int ID) {
             return base.Channel.getProductAsync(ID);
+        }
+        
+        public PracXFinal.ServiceReference1.Product[] getAllProductsAlphabetically() {
+            return base.Channel.getAllProductsAlphabetically();
+        }
+        
+        public System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product[]> getAllProductsAlphabeticallyAsync() {
+            return base.Channel.getAllProductsAlphabeticallyAsync();
+        }
+        
+        public PracXFinal.ServiceReference1.Product[] getAllProductsByPrice() {
+            return base.Channel.getAllProductsByPrice();
+        }
+        
+        public System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product[]> getAllProductsByPriceAsync() {
+            return base.Channel.getAllProductsByPriceAsync();
+        }
+        
+        public PracXFinal.ServiceReference1.Product[] getAllProductsPriceFiltered(int min, int max) {
+            return base.Channel.getAllProductsPriceFiltered(min, max);
+        }
+        
+        public System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product[]> getAllProductsPriceFilteredAsync(int min, int max) {
+            return base.Channel.getAllProductsPriceFilteredAsync(min, max);
+        }
+        
+        public PracXFinal.ServiceReference1.Product[] getAllProductsCategoryFiltered(char aORnORe) {
+            return base.Channel.getAllProductsCategoryFiltered(aORnORe);
+        }
+        
+        public System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product[]> getAllProductsCategoryFilteredAsync(char aORnORe) {
+            return base.Channel.getAllProductsCategoryFilteredAsync(aORnORe);
         }
     }
 }

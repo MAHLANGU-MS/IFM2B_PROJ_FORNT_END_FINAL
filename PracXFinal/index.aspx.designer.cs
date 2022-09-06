@@ -15,12 +15,12 @@ namespace PracXFinal
     {
 
         /// <summary>
-        /// tab1 control.
+        /// all_prods control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl tab1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl all_prods;
     }
 }

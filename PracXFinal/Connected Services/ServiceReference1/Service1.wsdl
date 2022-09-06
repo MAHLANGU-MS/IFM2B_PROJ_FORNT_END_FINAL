@@ -31,6 +31,30 @@
   <wsdl:message name="IService1_getProduct_OutputMessage">
     <wsdl:part name="parameters" element="tns:getProductResponse" />
   </wsdl:message>
+  <wsdl:message name="IService1_getAllProductsAlphabetically_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllProductsAlphabetically" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllProductsAlphabetically_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllProductsAlphabeticallyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllProductsByPrice_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllProductsByPrice" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllProductsByPrice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllProductsByPriceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllProductsPriceFiltered_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllProductsPriceFiltered" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllProductsPriceFiltered_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllProductsPriceFilteredResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllProductsCategoryFiltered_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllProductsCategoryFiltered" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllProductsCategoryFiltered_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllProductsCategoryFilteredResponse" />
+  </wsdl:message>
   <wsdl:portType name="IService1">
     <wsdl:operation name="Login">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/Login" message="tns:IService1_Login_InputMessage" />
@@ -47,6 +71,22 @@
     <wsdl:operation name="getProduct">
       <wsdl:input wsaw:Action="http://tempuri.org/IService1/getProduct" message="tns:IService1_getProduct_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IService1/getProductResponse" message="tns:IService1_getProduct_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllProductsAlphabetically">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAllProductsAlphabetically" message="tns:IService1_getAllProductsAlphabetically_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAllProductsAlphabeticallyResponse" message="tns:IService1_getAllProductsAlphabetically_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllProductsByPrice">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAllProductsByPrice" message="tns:IService1_getAllProductsByPrice_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAllProductsByPriceResponse" message="tns:IService1_getAllProductsByPrice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllProductsPriceFiltered">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAllProductsPriceFiltered" message="tns:IService1_getAllProductsPriceFiltered_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAllProductsPriceFilteredResponse" message="tns:IService1_getAllProductsPriceFiltered_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllProductsCategoryFiltered">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAllProductsCategoryFiltered" message="tns:IService1_getAllProductsCategoryFiltered_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAllProductsCategoryFilteredResponse" message="tns:IService1_getAllProductsCategoryFiltered_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
@@ -80,6 +120,42 @@
     </wsdl:operation>
     <wsdl:operation name="getProduct">
       <soap:operation soapAction="http://tempuri.org/IService1/getProduct" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllProductsAlphabetically">
+      <soap:operation soapAction="http://tempuri.org/IService1/getAllProductsAlphabetically" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllProductsByPrice">
+      <soap:operation soapAction="http://tempuri.org/IService1/getAllProductsByPrice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllProductsPriceFiltered">
+      <soap:operation soapAction="http://tempuri.org/IService1/getAllProductsPriceFiltered" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllProductsCategoryFiltered">
+      <soap:operation soapAction="http://tempuri.org/IService1/getAllProductsCategoryFiltered" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

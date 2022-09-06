@@ -7,43 +7,45 @@
 
 	<div class="container allprods">
 		<div class="row">
-	
+		
+			<form id="d" runat="server" >
 			<div id="aside" class="col-md-3">
 						<!-- aside Widget -->
 						<div class="aside">
 							<h3 class="aside-title">Categories</h3>
 							<div class="checkbox-filter">
-
-							
-
 								<div class="input-checkbox">
-									<input type="checkbox" id="category-6">
-									<label for="category-6">
-										<span></span>
-										E-Books
-										<small></small>
-									</label>
+								<asp:CheckBoxList ID="CheckBoxList1" runat="server">
+									<asp:ListItem>
+										Name
+									</asp:ListItem>
+								</asp:CheckBoxList>
 								</div>
-									<div class="input-checkbox">
-									<input type="checkbox" id="category-5">
-									<label for="category-5">
-										<span></span>
-										Novels
-										<small></small>
-									</label>
-								</div>
-								<div class="input-checkbox">
-									<input type="checkbox" id="category-4">
-									<label for="category-4">
-										<span></span>
-										AudioBooks
-										<small></small>
-									</label>
-								</div>
-								
 							</div>
 						</div>
 						<!-- /aside Widget -->
+
+						<div class="aside">
+							<h3 class="aside-title">Price</h3>
+							<div class="price-filter">
+								<div id="price-slider"></div>
+								<div class="input-number price-min">
+									<input id="price_min" class="input" Placeholder="Min Price" type="number" value="100" runat="server">
+									
+								</div>
+								<span>-</span>
+								<div class="input-number price-max">
+									<input class="input" id="price_max" type="number" Placeholder="Max Price" value="50000" runat="server" >
+									
+								</div>
+								<div class="filter_btn" >
+
+									<asp:Button ID="btnReg" runat="server" Text="Filter" href="#" class="primary-btn btn-sm btn_filter order-submit" OnClick="btnSort_Click"/>
+								</div>
+						
+							</div>
+						</div>
+
 				</div>
 	<div id="store" class="col-md-9" >
 
@@ -51,11 +53,21 @@
 							<div class="store-sort">
 								<label>
 									Sort By:
-									<select class="input-select">
+									<%--<select class="input-select" id="name_sorter" runat="server"  OnClick="Sort_Click" >
 										<option value="0">Name</option>
 										<option value="1">Price</option>
-									</select>
+
+									</select>--%>
+
 								</label>
+								<span>
+
+
+									<asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="Sorter" >
+										<asp:ListItem Value="0" >Name</asp:ListItem>
+										<asp:ListItem Value="1">Item</asp:ListItem>
+									</asp:DropDownList>
+								</span>
 							</div>
 						</div>
 	<div class="row" id="all_prods" runat="server" >
@@ -64,6 +76,8 @@
 
 	</div>
 	</div> 
+									</form>
+
 		</div>
 	</div>
 	</div>
