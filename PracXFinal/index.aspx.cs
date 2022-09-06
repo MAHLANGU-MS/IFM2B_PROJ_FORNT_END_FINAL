@@ -19,27 +19,34 @@ namespace PracXFinal
 
             dynamic prod = sr.getAllProducts().ToList();
 
-            foreach(ServiceReference1.Product product in prod)
+            foreach(ServiceReference1.Product p in prod)
             {
+
                 display += "<div class='product'>";
                 display += "<div class='product-img'>";
-                display += "<img src='./img/product01.png' alt=''>";
+                display += "<img src='" + p.PrImage + "' alt=''>";
                 display += "<div class='product-label'>";
                 display += "</div>";
                 display += "</div>";
                 display += "<div class='product-body'>";
                 display += "<p class='product-category'>Category</p>";
-                display += "<h3 class='product-name'><a href='#'>product name goes here</a></h3>";
-                display += "<h4 class='product-price'>$980.00 <del class='product-old-price'>$990.00</del></h4>";
+                display += "<h3 class='product-name'><a href='#'>" + p.PrName + "</a></h3>";
+                display += "<h4 class='product-price'> R " + String.Format("{0:0.00}", p.PrPrice) + "<del class='product-old-price'>R " + String.Format("{0:0.00}", p.PrOldPrice) + "</del></h4>";
+                display += "<div class='product-rating'>";
+
+                display += "</div>";
                 display += "<div class='product-btns'>";
-                display += "<button class='add-to-wishlist'><i class='fa fa-heart-o'><i><span class='tooltipp'>add to wishlist</span></button>";
+                display += "<button class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist</span></button>";
                 display += "</div>";
                 display += "</div>";
+                //display += "<div class='add-to-cart'>";
+                //display += "<button class='add-to-cart-btn'><i class='fa fa-shopping-cart'></i> add to cart</button>";
+                //display += "</div>";
                 display += "</div>";
 
             }
 
             all_prods.InnerHtml = display;
-		}
+        }
     }
 }

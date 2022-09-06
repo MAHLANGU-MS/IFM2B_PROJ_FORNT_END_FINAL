@@ -36,7 +36,7 @@ namespace PracXFinal
                 display += "<div class='product-body'>";
                 display += "<p class='product-category'>Category</p>";
                 display += "<h3 class='product-name'><a href='#'>" + p.PrName + "</a></h3>";
-                display += "<h4 class='product-price'> R " + Math.Round(p.PrPrice, 2) + "<del class='product-old-price'>$100</del></h4>";
+                display += "<h4 class='product-price'> R " + String.Format("{0:0.00}", p.PrPrice) + "<del class='product-old-price'>"+ String.Format("{0:0.00}", p.PrOldPrice)+ "</del></h4>";
                 display += "<div class='product-btns'>";
                 display += "<button class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist </span></button>";
                 display += "<button class='quick-view'><a href='SingleProduct.aspx?Id=" + p.Id + "'><i class='fa fa-eye'></i><span class='tooltipp'>view product</span></a></button>";
