@@ -114,18 +114,20 @@
     <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
-    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
-    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
     <Content Include="Connected Services\ServiceReference1\PracXFinal.ServiceReference1.Product.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\ServiceReference1\PracXFinal.ServiceReference1.User.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
+    <None Include="Connected Services\ServiceReference1\Service1.disco" />
+    <None Include="Connected Services\ServiceReference1\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceReference1\configuration.svcinfo" />
     <None Include="Connected Services\ServiceReference1\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="LogOut.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="css\about_style.css" />
     <Content Include="css\bootstrap.min.css" />
@@ -258,6 +260,7 @@
     <Compile Include="RemoveProduct.aspx.designer.cs">
       <DependentUpon>RemoveProduct.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Secrecy.cs" />
     <Compile Include="SingleProduct.aspx.cs">
       <DependentUpon>SingleProduct.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -285,6 +288,13 @@
     </Compile>
     <Compile Include="login.aspx.designer.cs">
       <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <!-- SECTION -->
-		<%--<div class="section">
+		<div class="section">
 			<!-- container -->
 			<div class="container">
 				<!-- row -->
@@ -54,7 +54,7 @@
 				<!-- /row -->
 			</div>
 			<!-- /container -->
-		</div>--%>
+		</div>
 		<!-- /SECTION -->
 
 		<!-- SECTION -->

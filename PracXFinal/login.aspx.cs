@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using HashPass;
 using PracXFinal.ServiceReference1;
 
 namespace PracXFinal
@@ -18,7 +19,8 @@ namespace PracXFinal
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            User result = sr.Login(email.Value, pass.Value);
+            var hashed = Secrecy.HashPassword(pass.Value);
+            User result = sr.Login(email.Value, hashed);
 
             if (result != null)
             {
@@ -29,6 +31,7 @@ namespace PracXFinal
             else
             {
                 //show that they dont have an account
+                error.Text = "Account does not exist please Register";
             }
         }
     }

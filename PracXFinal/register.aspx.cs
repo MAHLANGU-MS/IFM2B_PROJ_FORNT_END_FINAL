@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using HashPass;
 using PracXFinal.ServiceReference1;
 
 namespace PracXFinal
@@ -20,18 +21,17 @@ namespace PracXFinal
 
             Service1Client sr = new Service1Client();
 
-            if (pass.Value == repass.Value)
-            {
-
                 if (pass.Value == repass.Value)
                 {
 
-                    var newUser = new User
+                var hashed = Secrecy.HashPassword(pass.Value);
+
+                var newUser = new User
                     {
                         Name = fname.Value,
                         Surname = lname.Value,
                         Email = email.Value,
-                        Password = pass.Value,
+                        Password = hashed,
                         UserType = type.Value
                     };
 
@@ -44,33 +44,20 @@ namespace PracXFinal
                     }
                     else if (result == -1)
                     {
-                        //user not added 
-                        //    reg_failed.Visible = true;
+                    //user not added 
+                    error.Text = "User Not Added";
                     }
                     else if (result == 0)
                     {
-                        //user already exists
-                        //
+                    //user already exists
+                    error.Text = "User Already Exists";
                     }
 
 
-                    //int result = sr.register();
-
-                    //if (result == 1)
-                    //{
-                    //    Response.Redirect("login.aspx");
-
-                    //}
-                    //else if (result == -1)
-                    //{
-
-                    //    //user not added 
-                    //    reg_failed.Visible = true;
-
-                    //}
+                    
 
                 }
-            }
+            
         }
 
     }

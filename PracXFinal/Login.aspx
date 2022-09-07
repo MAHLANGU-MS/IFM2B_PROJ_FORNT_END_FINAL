@@ -26,6 +26,7 @@
 							</div>
 						</div>
 						
+						<asp:Label ID="error" runat="server" Text=""></asp:Label>
 						<!-- /Billing Details -->
 						<asp:Button ID="btnLogin" runat="server" Text="Log In" href="#" class="primary-btn order-submit" OnClick="btnLogin_Click"/>
 

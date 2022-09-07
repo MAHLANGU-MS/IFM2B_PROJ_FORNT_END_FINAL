@@ -57,7 +57,8 @@
 						<div class="row">
 					<div class="col-md-12">
 						<div class="newsletter">
-							<div id="reg_failed" runat="server" visible="false"><p>Could not sign you up.</p></div>
+							<%-- <div id="reg_failed" runat="server" visible="false"><p>Could not sign you up.</p></div> --%>
+							<asp:Label ID="error" runat="server" Text=""></asp:Label>
 						</div>
 					</div>
 				</div>

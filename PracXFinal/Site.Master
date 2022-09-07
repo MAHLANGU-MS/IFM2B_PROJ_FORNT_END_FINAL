@@ -53,7 +53,7 @@
 				
 					<ul class="header-links pull-right">
 						<li id="login" runat="server" visible="true"><a href="login.aspx"><i class="fa fa-user-o"></i>Login</a></li>
-						<li id="logout" runat="server" visible="false"><a href="login.aspx"><i class="fa fa-user-o"></i>Logout</a></li>
+						<li id="logout" runat="server" visible="false"><a href="LogOut.aspx"><i class="fa fa-user-o"></i>Logout</a></li>
 						<li id="signup" visible="true" runat="server" ><a href="Register.aspx"><i class="fa fa-user-o"></i>Sign Up</a></li>
 					</ul>
 				</div>

@@ -24,6 +24,24 @@ namespace PracXFinal
         protected global::System.Web.UI.HtmlControls.HtmlInputText pid;
 
         /// <summary>
+        /// btnFindProduct control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFindProduct;
+
+        /// <summary>
+        /// error control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label error;
+
+        /// <summary>
         /// pname control.
         /// </summary>
         /// <remarks>
@@ -103,15 +121,6 @@ namespace PracXFinal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText imagelink;
-
-        /// <summary>
-        /// Edit_Prod control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm Edit_Prod;
 
         /// <summary>
         /// btnEditP control.

@@ -17,7 +17,7 @@ namespace PracXFinal
         {
 			string display = "";
 
-            dynamic prod = sr.getAllProducts().ToList();
+            var prod = sr.getAllProducts().ToList();
 
             foreach(ServiceReference1.Product p in prod)
             {
