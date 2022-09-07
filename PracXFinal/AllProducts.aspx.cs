@@ -23,7 +23,7 @@ namespace PracXFinal
             string display = "";
             dynamic prod = list;
             foreach (ServiceReference1.Product p in prod)
-            {
+            { 
                 display += "<div class='col-md-4 col-xs-6'>";
                 display += "<div class='product'>";
                 display += "<div class='product-img'>";
