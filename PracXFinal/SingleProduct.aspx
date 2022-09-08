@@ -2,9 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
+<form runat="server">
     
     <div class="section">
+		
 			<!-- container -->
 			<div class="container">
 				<!-- row -->
@@ -68,6 +69,8 @@
 							</div>
 					</div>--%>
 					<!-- /Product details -->
+					
+				<asp:Button ID="btnEditP" runat="server" Text="Edit product" href="#" class="primary-btn order-submit" visible="false"/>
 
 					
 				</div>
@@ -76,6 +79,8 @@
 			<!-- /container -->
 		</div>
 		<!-- /SECTION -->
+
+	</form>
     
 
 </asp:Content>

@@ -13,7 +13,7 @@ namespace PracXFinal
 
 		Service1Client sr = new Service1Client();
         protected void Page_Load(object sender, EventArgs e)
-        {
+        { 
 
 			string display = "";
 
@@ -74,11 +74,25 @@ namespace PracXFinal
 
             display += "<ul class='product-btns'>";
             display += "<li><a href='#'><i class='fa fa-heart-o'></i> add to wishlist</a></li>";
+            //button for edit product
+            display += "<li><asp:Button ID='btnEditP' runat='server' Text= 'Edit product' href='#' class='primary-btn order-submit' visible='false'/></li>";
             display += "</ul>";
             display += "</div>";
             display += "</div>";
 
-            single_prod.InnerHtml = display;
+            single_prod.InnerHtml += display;
+
+            if (Session["AdminValue"] != null)
+            {
+                if (Session["AdminValue"].Equals("Manager"))
+                {
+                    btnEditP.Visible = true;
+                }
+                else
+                {
+                    btnEditP.Visible = false;
+                }
+            }
         }
     }
 }
