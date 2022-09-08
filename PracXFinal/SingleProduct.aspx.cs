@@ -85,10 +85,12 @@ namespace PracXFinal
                 if (Session["AdminValue"].Equals("Manager"))
                 {
                     btnEditP.Visible = true;
+                    btnRemP.Visible = true;
                 }
                 else
                 {
                     btnEditP.Visible = false;
+                    btnRemP.Visible = false;
                 }
             }
         }
@@ -96,6 +98,11 @@ namespace PracXFinal
         protected void btnEditP_Click(object sender, EventArgs e)
         {
             Response.Redirect("EditProduct.aspx?Id="+id);
+        }
+
+        protected void btnRemP_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RemoveProduct.aspx?Id=" + id);
         }
     }
 }

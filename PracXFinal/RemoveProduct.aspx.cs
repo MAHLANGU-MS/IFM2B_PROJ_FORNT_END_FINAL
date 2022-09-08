@@ -11,7 +11,11 @@ namespace PracXFinal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Request.QueryString != null && Request.QueryString.Count > 0)
+            {
+                int id = Convert.ToInt32(Request.QueryString["Id"]);
+                pid.Value = "" + id;
+            }
         }
     }
 }

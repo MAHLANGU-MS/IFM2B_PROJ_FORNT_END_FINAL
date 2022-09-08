@@ -76,6 +76,7 @@
 				</div>
 				<!-- /row -->
 				<asp:Button ID="btnEditP" runat="server" Text="Edit This Product" href="#" class="primary-btn order-submit" visible="false" OnClick="btnEditP_Click"/>
+				<asp:Button ID="btnRemP" runat="server" Text="Remove This Product" href="#" class="primary-btn order-submit" visible="false" OnClick="btnRemP_Click"/>
 			</div>
 			<!-- /container -->
 		</div>
