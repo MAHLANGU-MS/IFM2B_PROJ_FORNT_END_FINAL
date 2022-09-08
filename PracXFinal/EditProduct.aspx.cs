@@ -13,7 +13,12 @@ namespace PracXFinal
         Service1Client sr = new Service1Client();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (Request.QueryString!=null && Request.QueryString.Count>0)
+            {
+                int id = Convert.ToInt32(Request.QueryString["Id"]);
+                pid.Value = "" + id;
+            }
+            
         }
 
         protected void btnFindProduct_Click(object sender, EventArgs e)

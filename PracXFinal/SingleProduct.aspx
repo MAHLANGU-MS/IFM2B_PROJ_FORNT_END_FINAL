@@ -70,11 +70,12 @@
 					</div>--%>
 					<!-- /Product details -->
 					
-				<asp:Button ID="btnEditP" runat="server" Text="Edit product" href="#" class="primary-btn order-submit" visible="false"/>
+				
 
 					
 				</div>
 				<!-- /row -->
+				<asp:Button ID="btnEditP" runat="server" Text="Edit This Product" href="#" class="primary-btn order-submit" visible="false" OnClick="btnEditP_Click"/>
 			</div>
 			<!-- /container -->
 		</div>
