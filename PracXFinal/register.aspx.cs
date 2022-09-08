@@ -27,7 +27,7 @@ namespace PracXFinal
                 var hashed = Secrecy.HashPassword(pass.Value);
 
                 var newUser = new User
-                    {
+                {
                         Name = fname.Value,
                         Surname = lname.Value,
                         Email = email.Value,
