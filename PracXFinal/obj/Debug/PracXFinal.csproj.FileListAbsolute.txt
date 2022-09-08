@@ -171,3 +171,11 @@ C:\Users\User\source\repos\IFM2B_PROJ_FORNT_END_FINAL-master\PracXFinal\obj\Debu
 C:\Users\User\source\repos\IFM2B_PROJ_FORNT_END_FINAL-master\PracXFinal\obj\Debug\PracXFinal.csproj.CopyComplete
 C:\Users\User\source\repos\IFM2B_PROJ_FORNT_END_FINAL-master\PracXFinal\obj\Debug\PracXFinal.dll
 C:\Users\User\source\repos\IFM2B_PROJ_FORNT_END_FINAL-master\PracXFinal\obj\Debug\PracXFinal.pdb
+C:\Users\Quinton\Downloads\IFM2B_PROJ_FORNT_END_FINAL-master (1)\IFM2B_PROJ_FORNT_END_FINAL-master\PracXFinal\bin\PracXFinal.dll.config
+C:\Users\Quinton\Downloads\IFM2B_PROJ_FORNT_END_FINAL-master (1)\IFM2B_PROJ_FORNT_END_FINAL-master\PracXFinal\bin\PracXFinal.dll
+C:\Users\Quinton\Downloads\IFM2B_PROJ_FORNT_END_FINAL-master (1)\IFM2B_PROJ_FORNT_END_FINAL-master\PracXFinal\bin\PracXFinal.pdb
+C:\Users\Quinton\Downloads\IFM2B_PROJ_FORNT_END_FINAL-master (1)\IFM2B_PROJ_FORNT_END_FINAL-master\PracXFinal\obj\Debug\PracXFinal.csproj.AssemblyReference.cache
+C:\Users\Quinton\Downloads\IFM2B_PROJ_FORNT_END_FINAL-master (1)\IFM2B_PROJ_FORNT_END_FINAL-master\PracXFinal\obj\Debug\PracXFinal.csproj.CoreCompileInputs.cache
+C:\Users\Quinton\Downloads\IFM2B_PROJ_FORNT_END_FINAL-master (1)\IFM2B_PROJ_FORNT_END_FINAL-master\PracXFinal\obj\Debug\PracXFinal.csproj.CopyComplete
+C:\Users\Quinton\Downloads\IFM2B_PROJ_FORNT_END_FINAL-master (1)\IFM2B_PROJ_FORNT_END_FINAL-master\PracXFinal\obj\Debug\PracXFinal.dll
+C:\Users\Quinton\Downloads\IFM2B_PROJ_FORNT_END_FINAL-master (1)\IFM2B_PROJ_FORNT_END_FINAL-master\PracXFinal\obj\Debug\PracXFinal.pdb
