@@ -69,15 +69,6 @@ namespace PracXFinal
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl cart;
 
         /// <summary>
-        /// cat_menu_item control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cat_menu_item;
-
-        /// <summary>
         /// add control.
         /// </summary>
         /// <remarks>

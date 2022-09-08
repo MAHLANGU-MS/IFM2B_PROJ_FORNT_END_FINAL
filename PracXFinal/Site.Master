@@ -167,21 +167,7 @@
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav" >
 						<li class="active"><a href="index.aspx">Home</a></li>
-						<li><a href="#"> Category</a>
-							<div class="cat-menu" id="cat_menu_item" runat="server"   >			
-								<ul>
-									<li>
-										<a href="#">NAMEname</a>
-									</li>
-									<li>
-										<a href="#">NAMEname</a>
-									</li>
-									<li>
-										<a href="#">NAMEname</a>
-									</li>
-								</ul>
-							</div>
-						</li>	
+						<li><a href="#">Category</a></li>	
 						<li><a href="AllProducts.aspx">Products</a></li>
 						<li ><a href="Contact.aspx">Contact</a></li>
 						<li><a href="About.aspx">About</a></li>
