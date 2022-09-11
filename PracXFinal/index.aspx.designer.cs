@@ -15,6 +15,15 @@ namespace PracXFinal
     {
 
         /// <summary>
+        /// all_prods_deals control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl all_prods_deals;
+
+        /// <summary>
         /// all_prods control.
         /// </summary>
         /// <remarks>

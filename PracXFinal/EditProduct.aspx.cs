@@ -41,7 +41,7 @@ namespace PracXFinal
 
 
                 pname.Visible = true;
-                pdesc.Visible = true;
+                pdesc.Visible = true; 
                 pcat.Visible = true;
                 prat.Visible = true;
                 pquant.Visible = true;

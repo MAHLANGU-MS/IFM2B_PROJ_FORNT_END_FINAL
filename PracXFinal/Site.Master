@@ -167,7 +167,7 @@
 					<!-- NAV -->
 					<ul class="main-nav nav navbar-nav" >
 						<li class="active"><a href="index.aspx">Home</a></li>
-						<li><a href="#">Category</a></li>	
+						<li><a href="#">Deals</a></li>	
 						<li><a href="AllProducts.aspx">Products</a></li>
 						<li ><a href="Contact.aspx">Contact</a></li>
 						<li><a href="About.aspx">About</a></li>
@@ -220,9 +220,8 @@
 
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">Service</h3>
+								<h3 class="footer-title">My Account</h3>
 								<ul class="footer-links">
-									<li><a href="#">My Account</a></li>
 									<li><a href="#">View Cart</a></li>
 									<li><a href="#">Wishlist</a></li>
 									<li><a href="#">Help</a></li>
