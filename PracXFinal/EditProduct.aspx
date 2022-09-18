@@ -70,8 +70,8 @@
 						<!-- <a href="#" class="primary-btn order-submit">Register</a> -->
 						
 
-						<asp:Button ID="btnEditP" runat="server" Text="Edit product" href="#" class="primary-btn order-submit" visible="false"/>
-						
+						<asp:Button ID="btnEditP" runat="server" Text="Edit product" href="#" class="primary-btn order-submit" visible="false" OnClick="btnEditP_Click"/>
+						<asp:Label ID="lblProductMessage" runat="server" Text=""></asp:Label>
 							
 						
 					</div>

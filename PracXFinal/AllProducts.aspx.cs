@@ -12,6 +12,7 @@ namespace PracXFinal
     {
 
         Service1Client sr = new Service1Client();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             populateProducts(sr.getAllProducts().ToList());

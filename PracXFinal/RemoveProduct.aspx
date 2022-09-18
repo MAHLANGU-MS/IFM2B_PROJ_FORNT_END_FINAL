@@ -28,7 +28,8 @@
 						<!-- <a href="#" class="primary-btn order-submit">Register</a> -->
 						<form id="RemoveProd"  runat="server">
 
-						<asp:Button ID="btnRemP" runat="server" Text="Remove product" href="#" class="primary-btn order-submit"/>
+						<asp:Button ID="btnRemP" runat="server" Text="Remove product" href="#" class="primary-btn order-submit" OnClick="btnRemP_Click"/>
+							<asp:Label ID="lblProductMessage" runat="server" Text=""></asp:Label>
 						</form>
 							
 						
