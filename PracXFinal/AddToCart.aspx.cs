@@ -7,14 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace PracXFinal
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class AddToCart : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["LoggedInID"] = null;
-            Session["AddToCartId"] = null;
-            Session["AdminValue"] = null;
-            Response.Redirect("index.aspx");
+
         }
     }
 }

@@ -4,17 +4,20 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using PracXFinal.ServiceReference1;
 
 namespace PracXFinal
 {
-    public partial class WebForm2 : System.Web.UI.Page
+    public partial class MyCart : System.Web.UI.Page
     {
+        Service1Client sr = new Service1Client();
         protected void Page_Load(object sender, EventArgs e)
         {
-            Session["LoggedInID"] = null;
-            Session["AddToCartId"] = null;
-            Session["AdminValue"] = null;
-            Response.Redirect("index.aspx");
+            if (Request.QueryString["LoggedInID"] != null)
+            {
+
+                
+            }
         }
     }
 }

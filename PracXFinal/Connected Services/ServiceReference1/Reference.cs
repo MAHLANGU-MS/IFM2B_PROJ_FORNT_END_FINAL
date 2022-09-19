@@ -140,6 +140,99 @@ namespace PracXFinal.ServiceReference1 {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Cart", Namespace="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service")]
+    [System.SerializableAttribute()]
+    public partial class Cart : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Prod_IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int QuantityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int User_IdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Prod_Id {
+            get {
+                return this.Prod_IdField;
+            }
+            set {
+                if ((this.Prod_IdField.Equals(value) != true)) {
+                    this.Prod_IdField = value;
+                    this.RaisePropertyChanged("Prod_Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Quantity {
+            get {
+                return this.QuantityField;
+            }
+            set {
+                if ((this.QuantityField.Equals(value) != true)) {
+                    this.QuantityField = value;
+                    this.RaisePropertyChanged("Quantity");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int User_Id {
+            get {
+                return this.User_IdField;
+            }
+            set {
+                if ((this.User_IdField.Equals(value) != true)) {
+                    this.User_IdField = value;
+                    this.RaisePropertyChanged("User_Id");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="Product", Namespace="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service")]
     [System.SerializableAttribute()]
     public partial class Product : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
@@ -327,6 +420,115 @@ namespace PracXFinal.ServiceReference1 {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Invoice", Namespace="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service")]
+    [System.SerializableAttribute()]
+    public partial class Invoice : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.DateTime DateField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int QuantityField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int Total_Field;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int User_IdField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.DateTime Date {
+            get {
+                return this.DateField;
+            }
+            set {
+                if ((this.DateField.Equals(value) != true)) {
+                    this.DateField = value;
+                    this.RaisePropertyChanged("Date");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Quantity {
+            get {
+                return this.QuantityField;
+            }
+            set {
+                if ((this.QuantityField.Equals(value) != true)) {
+                    this.QuantityField = value;
+                    this.RaisePropertyChanged("Quantity");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int Total_ {
+            get {
+                return this.Total_Field;
+            }
+            set {
+                if ((this.Total_Field.Equals(value) != true)) {
+                    this.Total_Field = value;
+                    this.RaisePropertyChanged("Total_");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int User_Id {
+            get {
+                return this.User_IdField;
+            }
+            set {
+                if ((this.User_IdField.Equals(value) != true)) {
+                    this.User_IdField = value;
+                    this.RaisePropertyChanged("User_Id");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.IService1")]
     public interface IService1 {
@@ -342,6 +544,30 @@ namespace PracXFinal.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/register", ReplyAction="http://tempuri.org/IService1/registerResponse")]
         System.Threading.Tasks.Task<int> registerAsync(PracXFinal.ServiceReference1.User user);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addToCart", ReplyAction="http://tempuri.org/IService1/addToCartResponse")]
+        int addToCart(PracXFinal.ServiceReference1.Cart cart);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addToCart", ReplyAction="http://tempuri.org/IService1/addToCartResponse")]
+        System.Threading.Tasks.Task<int> addToCartAsync(PracXFinal.ServiceReference1.Cart cart);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/removeFromCart", ReplyAction="http://tempuri.org/IService1/removeFromCartResponse")]
+        int removeFromCart(PracXFinal.ServiceReference1.Cart cart);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/removeFromCart", ReplyAction="http://tempuri.org/IService1/removeFromCartResponse")]
+        System.Threading.Tasks.Task<int> removeFromCartAsync(PracXFinal.ServiceReference1.Cart cart);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/numItemsInCart", ReplyAction="http://tempuri.org/IService1/numItemsInCartResponse")]
+        int numItemsInCart(int u_Id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/numItemsInCart", ReplyAction="http://tempuri.org/IService1/numItemsInCartResponse")]
+        System.Threading.Tasks.Task<int> numItemsInCartAsync(int u_Id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getProdsInCart", ReplyAction="http://tempuri.org/IService1/getProdsInCartResponse")]
+        PracXFinal.ServiceReference1.Cart[] getProdsInCart(int u_id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getProdsInCart", ReplyAction="http://tempuri.org/IService1/getProdsInCartResponse")]
+        System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Cart[]> getProdsInCartAsync(int u_id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addProduct", ReplyAction="http://tempuri.org/IService1/addProductResponse")]
         int addProduct(PracXFinal.ServiceReference1.Product product);
@@ -396,6 +622,24 @@ namespace PracXFinal.ServiceReference1 {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/getAllDiscountedProducts", ReplyAction="http://tempuri.org/IService1/getAllDiscountedProductsResponse")]
         System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product[]> getAllDiscountedProductsAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/editProduct", ReplyAction="http://tempuri.org/IService1/editProductResponse")]
+        int editProduct(PracXFinal.ServiceReference1.Product u);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/editProduct", ReplyAction="http://tempuri.org/IService1/editProductResponse")]
+        System.Threading.Tasks.Task<int> editProductAsync(PracXFinal.ServiceReference1.Product u);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/purchase", ReplyAction="http://tempuri.org/IService1/purchaseResponse")]
+        int purchase(PracXFinal.ServiceReference1.Invoice inv);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/purchase", ReplyAction="http://tempuri.org/IService1/purchaseResponse")]
+        System.Threading.Tasks.Task<int> purchaseAsync(PracXFinal.ServiceReference1.Invoice inv);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/existingInvoices", ReplyAction="http://tempuri.org/IService1/existingInvoicesResponse")]
+        PracXFinal.ServiceReference1.Invoice[] existingInvoices(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/existingInvoices", ReplyAction="http://tempuri.org/IService1/existingInvoicesResponse")]
+        System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Invoice[]> existingInvoicesAsync(int id);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -439,6 +683,38 @@ namespace PracXFinal.ServiceReference1 {
         
         public System.Threading.Tasks.Task<int> registerAsync(PracXFinal.ServiceReference1.User user) {
             return base.Channel.registerAsync(user);
+        }
+        
+        public int addToCart(PracXFinal.ServiceReference1.Cart cart) {
+            return base.Channel.addToCart(cart);
+        }
+        
+        public System.Threading.Tasks.Task<int> addToCartAsync(PracXFinal.ServiceReference1.Cart cart) {
+            return base.Channel.addToCartAsync(cart);
+        }
+        
+        public int removeFromCart(PracXFinal.ServiceReference1.Cart cart) {
+            return base.Channel.removeFromCart(cart);
+        }
+        
+        public System.Threading.Tasks.Task<int> removeFromCartAsync(PracXFinal.ServiceReference1.Cart cart) {
+            return base.Channel.removeFromCartAsync(cart);
+        }
+        
+        public int numItemsInCart(int u_Id) {
+            return base.Channel.numItemsInCart(u_Id);
+        }
+        
+        public System.Threading.Tasks.Task<int> numItemsInCartAsync(int u_Id) {
+            return base.Channel.numItemsInCartAsync(u_Id);
+        }
+        
+        public PracXFinal.ServiceReference1.Cart[] getProdsInCart(int u_id) {
+            return base.Channel.getProdsInCart(u_id);
+        }
+        
+        public System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Cart[]> getProdsInCartAsync(int u_id) {
+            return base.Channel.getProdsInCartAsync(u_id);
         }
         
         public int addProduct(PracXFinal.ServiceReference1.Product product) {
@@ -511,6 +787,30 @@ namespace PracXFinal.ServiceReference1 {
         
         public System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product[]> getAllDiscountedProductsAsync() {
             return base.Channel.getAllDiscountedProductsAsync();
+        }
+        
+        public int editProduct(PracXFinal.ServiceReference1.Product u) {
+            return base.Channel.editProduct(u);
+        }
+        
+        public System.Threading.Tasks.Task<int> editProductAsync(PracXFinal.ServiceReference1.Product u) {
+            return base.Channel.editProductAsync(u);
+        }
+        
+        public int purchase(PracXFinal.ServiceReference1.Invoice inv) {
+            return base.Channel.purchase(inv);
+        }
+        
+        public System.Threading.Tasks.Task<int> purchaseAsync(PracXFinal.ServiceReference1.Invoice inv) {
+            return base.Channel.purchaseAsync(inv);
+        }
+        
+        public PracXFinal.ServiceReference1.Invoice[] existingInvoices(int id) {
+            return base.Channel.existingInvoices(id);
+        }
+        
+        public System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Invoice[]> existingInvoicesAsync(int id) {
+            return base.Channel.existingInvoicesAsync(id);
         }
     }
 }

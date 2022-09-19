@@ -57,9 +57,8 @@ namespace PracXFinal
             {
                 error.Text = "Please enter an Product ID";
             }
-            
-
 
         }
+        
     }
 }

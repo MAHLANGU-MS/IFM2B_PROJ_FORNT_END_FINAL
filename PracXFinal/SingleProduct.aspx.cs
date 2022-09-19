@@ -10,7 +10,7 @@ namespace PracXFinal
 {
     public partial class SingleProduct : System.Web.UI.Page
     {
-        int id ;
+        private static int id =0 ;
 		Service1Client sr = new Service1Client();
         protected void Page_Load(object sender, EventArgs e)
         { 
@@ -18,6 +18,9 @@ namespace PracXFinal
 			string display = "";
 
 			id = Convert.ToInt32(Request.QueryString["Id"]);
+
+            if(id != 0)
+            {
 
 			var p = sr.getProduct(id);
 
@@ -51,7 +54,16 @@ namespace PracXFinal
 
             display += "</div>";
             display += "<div>";
-            display += "<h3 class='product-price'> R " + Math.Round(p.PrPrice,2) + "<del class='product-old-price'>" + p.PrOldPrice + "</del></h3>";
+            if(p.PrOldPrice == 0)
+                {
+
+                    display += "<h3 class='product-price'> R " + String.Format("{0:0.00}",p.PrPrice,2) + "</h3>";
+                }
+                else
+                {
+                    display += "<h3 class='product-price'> R " + String.Format("{0:0.00}",p.PrPrice,2) + "<del class='product-old-price'> R " + String.Format("{0,0:00}",p.PrOldPrice) + "</del></h3>";
+
+                }
             display += "<span class='product-available'>In Stock</span>";
             display += "</div>";
             display += "<p>" + p.PrDescription + "</p>";
@@ -69,29 +81,38 @@ namespace PracXFinal
             display += "<span class='qty-down'>-</span>";
             display += "</div>";
             display += "</div>";
-            display += "<button class='add-to-cart-btn'><i class='fa fa-shopping-cart'></i> add to cart</button>";
             display += "</div>";
 
             display += "<ul class='product-btns'>";
             display += "<li><a href='#'><i class='fa fa-heart-o'></i> add to wishlist</a></li>";
+            display += "<li><a class='add-to-cart-a'><i class='fa fa-shopping-cart fa_cart_wishlist'></i>Add to cart</a></li>";
             display += "</ul>";
+            //display += "<asp:Button class='primary-btn  order-submit' ID='btn_Buy' runat='server' Text='Buy Now' OnClick='btnBuyNow'/>";
+            display += "<a href='#' class='primary-btn order-submit'>Buy Now</a>";
             display += "</div>";
             display += "</div>";
 
             single_prod.InnerHtml = display;
 
-            if (Session["AdminValue"] != null)
+             if (Session["AdminValue"] != null)
+                {
+                    if (Session["AdminValue"].Equals("Manager"))
+                    {
+                        btnEditP.Visible = true;
+                        btnRemP.Visible = true;
+                    }
+                    else
+                    {
+                        btnEditP.Visible = false;
+                        btnRemP.Visible = false;
+                    }
+                }
+            }
+            else
             {
-                if (Session["AdminValue"].Equals("Manager"))
-                {
-                    btnEditP.Visible = true;
-                    btnRemP.Visible = true;
-                }
-                else
-                {
-                    btnEditP.Visible = false;
-                    btnRemP.Visible = false;
-                }
+                
+
+                Response.Redirect("index.aspx");
             }
         }
 
@@ -104,5 +125,10 @@ namespace PracXFinal
         {
             Response.Redirect("RemoveProduct.aspx?Id=" + id);
         }
+
+        //protected void btnBuyNow(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }

@@ -29,7 +29,6 @@
 
 							</div>
 						
-
 						<div class="aside">
 							<h3 class="aside-title">Price</h3>
 							<div class="price-filter">

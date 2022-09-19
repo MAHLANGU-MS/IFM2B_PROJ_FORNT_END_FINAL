@@ -29,20 +29,44 @@ namespace PracXFinal
                 display += "<div class='product-img'>";
                 display += "<img src='" + p.PrImage + "' alt='Image'>";
                 display += "<div class='product-label'>";
-                display += "<span class='sale'>-30%</span>";
-                display += "<span class='new'>NEW</span>";
-                display += "</div>";
-                display += "</div>";
-                display += "<div class='product-body'>";
-                display += "<p class='product-category'>Category</p>";
-                display += "<h3 class='product-name'><a href='SingleProduct.aspx?Id=" + p.Id + "'>" + p.PrName + "</a></h3>";
-                display += "<h4 class='product-price'> R " + String.Format("{0:0.00}", p.PrPrice) + "<del class='product-old-price'>"+ String.Format("{0:0.00}", p.PrOldPrice)+ "</del></h4>";
+
+
+                if (p.PrOldPrice == 0)
+                {
+                    display += "</div>";
+                    display += "</div>";
+                    display += "<div class='product-body'>";
+                    display += "<p class='product-category'>Category</p>";
+                    display += "<h3 class='product-name'><a href='SingleProduct.aspx?Id=" + p.Id + "'>" + p.PrName + "</a></h3>";
+                    display += "<h4 class='product-price'> R " + String.Format("{0:0.00}", p.PrPrice) + "</h4>";
+
+                }
+                else
+                {
+
+                    display += "<span class='sale'>" + String.Format("{0:0}", 100 - ((p.PrPrice / p.PrOldPrice) * 100)) + "%</span>";
+                    display += "</div>";
+                    display += "</div>";
+                    display += "<div class='product-body'>";
+                    display += "<p class='product-category'>Category</p>";
+                    display += "<h3 class='product-name'><a href='SingleProduct.aspx?Id="+ p.Id+ "'>" + p.PrName + "</a></h3>";
+                    display += "<h4 class='product-price'> R " + String.Format("{0:0.00}", p.PrPrice) + "<del class='product-old-price'>R " + String.Format("{0:0.00}", p.PrOldPrice) + "</del></h4>";
+
+                }
+
                 display += "<div class='product-btns'>";
-                display += "<button class='add-to-wishlist'><i class='fa fa-heart-o'></i><span class='tooltipp'>add to wishlist </span></button>";
+                display += "<a class='add-to-wishlist' href='SingleProduct.aspx?AddToWishListId="+ p.Id+ "'><i class='fa fa-heart-o fa_cart_wishlist '></i><span class='tooltipp'>Add to Wishlist </span></a>";
+
+                if (Session["LoggedInID"] != null)
+                {
+                    display += "<a class='add-to-wishlist' href='AllProducts.aspx?AddToCartId="+p.Id+"'><i class='fa fa-shopping-cart fa_cart_wishlist '></i><span class='tooltipp'>Add to Cart</span></a>";
+                }
+                else
+                {
+                    display += "<a class='add-to-wishlist' href='login.aspx' ><i class='fa fa-shopping-cart fa_cart_wishlist '></i><span class='tooltipp'>Add to Cart</span></a>";
+
+                }
                 display += "</div>";
-                display += "</div>";
-                display += "<div class='add-to-cart'>";
-                display += "<button class='add-to-cart-btn'><i class='fa fa-shopping-cart'></i> add to cart</button>";
                 display += "</div>";
                 display += "</div>";
                 display += "</div>";

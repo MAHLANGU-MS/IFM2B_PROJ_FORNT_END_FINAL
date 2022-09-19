@@ -60,13 +60,40 @@ namespace PracXFinal
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl wishllist;
 
         /// <summary>
-        /// cart control.
+        /// my_cart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cart;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl my_cart;
+
+        /// <summary>
+        /// num_cart_items control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl num_cart_items;
+
+        /// <summary>
+        /// cart_list control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cart_list;
+
+        /// <summary>
+        /// cart_summary control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl cart_summary;
 
         /// <summary>
         /// add control.

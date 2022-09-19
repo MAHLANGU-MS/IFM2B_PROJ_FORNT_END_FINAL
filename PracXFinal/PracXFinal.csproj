@@ -71,6 +71,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AddProduct.aspx" />
+    <Content Include="AddToCart.aspx" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
     <Content Include="bin\PracXFinal.dll" />
@@ -114,10 +115,17 @@
     <Content Include="bin\roslyn\System.Xml.XPath.XDocument.dll" />
     <Content Include="bin\roslyn\vbc.exe" />
     <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="CheckOut.aspx" />
     <Content Include="Connected Services\ServiceReference1\PracXFinal.ServiceReference1.Product.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\ServiceReference1\PracXFinal.ServiceReference1.User.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\PracXFinal.ServiceReference1.Cart.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\ServiceReference1\PracXFinal.ServiceReference1.Invoice.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\ServiceReference1\Service1.disco" />
@@ -127,6 +135,7 @@
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <Content Include="Invoice.aspx" />
     <Content Include="LogOut.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="css\about_style.css" />
@@ -187,10 +196,12 @@
     <Content Include="js\main.js" />
     <Content Include="js\nouislider.min.js" />
     <Content Include="js\slick.min.js" />
+    <Content Include="MyCart.aspx" />
     <Content Include="obj\Debug\PracXFinal.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\PracXFinal.dll" />
     <Content Include="obj\Debug\PracXFinal.pdb" />
     <Content Include="AllProducts.aspx" />
+    <Content Include="Purchased.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="RemoveProduct.aspx" />
     <Content Include="screenshot\Checkout.png" />
@@ -218,6 +229,20 @@
     <Compile Include="AddProduct.aspx.designer.cs">
       <DependentUpon>AddProduct.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AddToCart.aspx.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddToCart.aspx.designer.cs">
+      <DependentUpon>AddToCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.aspx.cs">
+      <DependentUpon>CheckOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckOut.aspx.designer.cs">
+      <DependentUpon>CheckOut.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Connected Services\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -237,6 +262,20 @@
     <Compile Include="EditProduct.aspx.designer.cs">
       <DependentUpon>EditProduct.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Invoice.aspx.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Invoice.aspx.designer.cs">
+      <DependentUpon>Invoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MyCart.aspx.cs">
+      <DependentUpon>MyCart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyCart.aspx.designer.cs">
+      <DependentUpon>MyCart.aspx</DependentUpon>
+    </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="AllProducts.aspx.cs">
       <DependentUpon>AllProducts.aspx</DependentUpon>
@@ -244,6 +283,13 @@
     </Compile>
     <Compile Include="AllProducts.aspx.designer.cs">
       <DependentUpon>AllProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Purchased.aspx.cs">
+      <DependentUpon>Purchased.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Purchased.aspx.designer.cs">
+      <DependentUpon>Purchased.aspx</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

@@ -31,10 +31,66 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="addToCart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="cart" nillable="true" type="q3:Cart" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addToCartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="addToCartResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeFromCart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="cart" nillable="true" type="q4:Cart" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="removeFromCartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="removeFromCartResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="numItemsInCart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="u_Id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="numItemsInCartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="numItemsInCartResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getProdsInCart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="u_id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getProdsInCartResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getProdsInCartResult" nillable="true" type="q5:ArrayOfCart" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="addProduct">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="product" nillable="true" type="q3:Product" />
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="product" nillable="true" type="q6:Product" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -69,7 +125,7 @@
   <xs:element name="getProductResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getProductResult" nillable="true" type="q4:Product" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getProductResult" nillable="true" type="q7:Product" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -81,7 +137,7 @@
   <xs:element name="getAllProductsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsResult" nillable="true" type="q5:ArrayOfProduct" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsResult" nillable="true" type="q8:ArrayOfProduct" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -93,7 +149,7 @@
   <xs:element name="getAllProductsAlphabeticallyResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsAlphabeticallyResult" nillable="true" type="q6:ArrayOfProduct" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsAlphabeticallyResult" nillable="true" type="q9:ArrayOfProduct" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -105,7 +161,7 @@
   <xs:element name="getAllProductsByPriceResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsByPriceResult" nillable="true" type="q7:ArrayOfProduct" />
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsByPriceResult" nillable="true" type="q10:ArrayOfProduct" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -120,21 +176,21 @@
   <xs:element name="getAllProductsPriceFilteredResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsPriceFilteredResult" nillable="true" type="q8:ArrayOfProduct" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsPriceFilteredResult" nillable="true" type="q11:ArrayOfProduct" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="getAllProductsCategoryFiltered">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="aORnORe" type="q9:char" />
+        <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="aORnORe" type="q12:char" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="getAllProductsCategoryFilteredResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsCategoryFilteredResult" nillable="true" type="q10:ArrayOfProduct" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsCategoryFilteredResult" nillable="true" type="q13:ArrayOfProduct" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -146,7 +202,49 @@
   <xs:element name="getAllDiscountedProductsResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllDiscountedProductsResult" nillable="true" type="q11:ArrayOfProduct" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllDiscountedProductsResult" nillable="true" type="q14:ArrayOfProduct" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="u" nillable="true" type="q15:Product" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editProductResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="purchase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="inv" nillable="true" type="q16:Invoice" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="purchaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="purchaseResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="existingInvoices">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="existingInvoicesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="existingInvoicesResult" nillable="true" type="q17:ArrayOfInvoice" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
