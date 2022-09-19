@@ -38,18 +38,18 @@ namespace PracXFinal
             if (result == 1)
             {
                 //product added
-                lblProductMessage.Text = "Product Added!";
+                lblProductMessage1.Text = "Product Added!";
 
             }
             else if (result == -1)
             {
                 //product not added 
-                lblProductMessage.Text = "Product NOT Added!";
+                lblProductMessage1.Text = "Product NOT Added!";
             }
             else if (result == 0)
             {
                 //product already exists
-                lblProductMessage.Text = "Product NOT Added!/nProduct Already Exists";
+                lblProductMessage1.Text = "Product NOT Added!/nProduct Already Exists";
                 
             }
 

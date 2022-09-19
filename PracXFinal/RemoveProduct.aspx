@@ -29,7 +29,7 @@
 						<form id="RemoveProd"  runat="server">
 
 						<asp:Button ID="btnRemP" runat="server" Text="Remove product" href="#" class="primary-btn order-submit" OnClick="btnRemP_Click"/>
-							<asp:Label ID="lblProductMessage" runat="server" Text=""></asp:Label>
+							<asp:Label ID="lblProductMessage1" runat="server" Text=""></asp:Label>
 						</form>
 							
 						

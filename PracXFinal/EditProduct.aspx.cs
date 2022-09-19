@@ -59,14 +59,13 @@ namespace PracXFinal
             }
 
         }
-<<<<<<< HEAD
-        
-=======
+
 
         protected void btnEditP_Click(object sender, EventArgs e)
         {
             var editedProduct = new ServiceReference1.Product
             {
+                Id = Convert.ToInt32(pid.Value),
                 PrName = pname.Value,
                 PrDescription = pdesc.Value,
                 PrCategory = pcat.Value,
@@ -78,28 +77,28 @@ namespace PracXFinal
                 PrImage = imagelink.Value
             };
 
-            int result = sr.editProduct(editedProduct);
+            bool result = sr.editProduct(editedProduct);
 
-            if (result == 1)
+            if (result == true)
             {
                 //product Edited
                 lblProductMessage.Text = "Product Edited!";
 
             }
-            else if (result == -1)
+            else if (result == false)
             {
                 //product not Edited 
                 lblProductMessage.Text = "Product NOT Editted!";
             }
-            else if (result == 0)
-            {
-                //Edited does not exist
-                //make sure backend adds if product doesnt exist return 0 
-                lblProductMessage.Text = "Product NOT Edited!/nProduct Does Not Exists";
+            //else if (result == 0)
+            //{
+            //    //Edited does not exist
+            //    //make sure backend adds if product doesnt exist return 0 
+            //    lblProductMessage.Text = "Product NOT Edited!/nProduct Does Not Exists";
 
-            }
+            //}
 
         }
->>>>>>> 843d56eb801f38200db79d0f695120fcaca6eacd
+
     }
 }

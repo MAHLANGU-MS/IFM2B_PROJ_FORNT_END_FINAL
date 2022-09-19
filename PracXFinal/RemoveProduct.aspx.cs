@@ -29,19 +29,19 @@ namespace PracXFinal
             if (result == 1)
             {
                 //product Edited
-                lblProductMessage.Text = "Product Removed!";
+                lblProductMessage1.Text = "Product Removed!";
 
             }
             else if (result == -1)
             {
                 //product not Edited 
-                lblProductMessage.Text = "Product NOT Removed!";
+                lblProductMessage1.Text = "Product NOT Removed!";
             }
             else if (result == 0)
             {
                 //Edited does not exist
                 //make sure backend adds if product doesnt exist return 0 
-                lblProductMessage.Text = "Product NOT Removed!/nProduct Does Not Exists";
+                lblProductMessage1.Text = "Product NOT Removed!/nProduct Does Not Exists";
 
             }
         }

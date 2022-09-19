@@ -575,12 +575,6 @@ namespace PracXFinal.ServiceReference1 {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/addProduct", ReplyAction="http://tempuri.org/IService1/addProductResponse")]
         System.Threading.Tasks.Task<int> addProductAsync(PracXFinal.ServiceReference1.Product product);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/editProduct", ReplyAction="http://tempuri.org/IService1/editProductResponse")]
-        int editProduct(PracXFinal.ServiceReference1.Product u);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/editProduct", ReplyAction="http://tempuri.org/IService1/editProductResponse")]
-        System.Threading.Tasks.Task<int> editProductAsync(PracXFinal.ServiceReference1.Product u);
-        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/removeProduct", ReplyAction="http://tempuri.org/IService1/removeProductResponse")]
         int removeProduct(int pID);
         
@@ -630,10 +624,10 @@ namespace PracXFinal.ServiceReference1 {
         System.Threading.Tasks.Task<PracXFinal.ServiceReference1.Product[]> getAllDiscountedProductsAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/editProduct", ReplyAction="http://tempuri.org/IService1/editProductResponse")]
-        int editProduct(PracXFinal.ServiceReference1.Product u);
+        bool editProduct(PracXFinal.ServiceReference1.Product u);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/editProduct", ReplyAction="http://tempuri.org/IService1/editProductResponse")]
-        System.Threading.Tasks.Task<int> editProductAsync(PracXFinal.ServiceReference1.Product u);
+        System.Threading.Tasks.Task<bool> editProductAsync(PracXFinal.ServiceReference1.Product u);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/purchase", ReplyAction="http://tempuri.org/IService1/purchaseResponse")]
         int purchase(PracXFinal.ServiceReference1.Invoice inv);
@@ -731,14 +725,6 @@ namespace PracXFinal.ServiceReference1 {
             return base.Channel.addProductAsync(product);
         }
         
-        public int editProduct(PracXFinal.ServiceReference1.Product u) {
-            return base.Channel.editProduct(u);
-        }
-        
-        public System.Threading.Tasks.Task<int> editProductAsync(PracXFinal.ServiceReference1.Product u) {
-            return base.Channel.editProductAsync(u);
-        }
-        
         public int removeProduct(int pID) {
             return base.Channel.removeProduct(pID);
         }
@@ -803,11 +789,11 @@ namespace PracXFinal.ServiceReference1 {
             return base.Channel.getAllDiscountedProductsAsync();
         }
         
-        public int editProduct(PracXFinal.ServiceReference1.Product u) {
+        public bool editProduct(PracXFinal.ServiceReference1.Product u) {
             return base.Channel.editProduct(u);
         }
         
-        public System.Threading.Tasks.Task<int> editProductAsync(PracXFinal.ServiceReference1.Product u) {
+        public System.Threading.Tasks.Task<bool> editProductAsync(PracXFinal.ServiceReference1.Product u) {
             return base.Channel.editProductAsync(u);
         }
         

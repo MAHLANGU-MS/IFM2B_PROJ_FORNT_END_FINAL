@@ -55,8 +55,8 @@
 						<form id="AddProd"  runat="server">
 
 						<asp:Button ID="btnAddP" runat="server" Text="Add product" href="#" class="primary-btn order-submit" OnClick="btnAddP_Click"/>
-							<asp:Label ID="lblProductMessage" runat="server" Text=""></asp:Label>
-						</form>
+							<asp:Label ID="lblProductMessage1" runat="server" Text=""></asp:Label>
+						</form> 
 							
 						
 					</div>
