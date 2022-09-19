@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PracXFinal.ServiceReference1;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,6 +12,47 @@ namespace PracXFinal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+        }
+
+        protected void btnAddP_Click(object sender, EventArgs e)
+        {
+            Service1Client sr = new Service1Client();
+
+            var newProduct = new ServiceReference1.Product
+            {
+                PrName = pname.Value,
+                PrDescription = pdesc.Value,
+                PrCategory = pcat.Value,
+                PrRating = Convert.ToInt32(prat.Value),
+                PrQuantity = Convert.ToInt32(pquant.Value),
+                PrPrice = Convert.ToDecimal(pprice.Value),
+                PrOldPrice = Convert.ToDecimal(poprice.Value),
+                PrStatus =  pstatus.Value,
+                PrImage = imagelink.Value
+
+            };
+
+            int result = sr.addProduct(newProduct);
+
+            if (result == 1)
+            {
+                //product added
+                lblProductMessage.Text = "Product Added!";
+
+            }
+            else if (result == -1)
+            {
+                //product not added 
+                lblProductMessage.Text = "Product NOT Added!";
+            }
+            else if (result == 0)
+            {
+                //product already exists
+                lblProductMessage.Text = "Product NOT Added!/nProduct Already Exists";
+                
+            }
+
 
         }
     }

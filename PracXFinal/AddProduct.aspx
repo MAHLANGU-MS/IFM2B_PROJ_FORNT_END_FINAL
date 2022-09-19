@@ -22,25 +22,25 @@
 								<input class="input" type="text" name="pname" placeholder="Product Name" id="pname" required="required" runat="server">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="imagelink" placeholder="Product Description" id="pdesc" required="required" runat="server">
+								<input class="input" type="text" name="pdesc" placeholder="Product Description" id="pdesc" required="required" runat="server">
 							</div>
 							<div class="form-group" runat="server">
-								<input class="input" type="text" name="pid" placeholder="Product Category" id="pcat" required="required" runat="server">
+								<input class="input" type="text" name="pcat" placeholder="Product Category" id="pcat" required="required" runat="server">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="pname" placeholder="Product Rating" id="prat" required="required" runat="server">
+								<input class="input" type="text" name="prat" placeholder="Product Rating" id="prat" required="required" runat="server">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="imagelink" placeholder="Product Quantity" id="pquant" required="required" runat="server">
+								<input class="input" type="text" name="pquant" placeholder="Product Quantity" id="pquant" required="required" runat="server">
 							</div>
 							<div class="form-group" runat="server">
-								<input class="input" type="text" name="pid" placeholder="Product Price" id="pprice" required="required" runat="server">
+								<input class="input" type="text" name="pprice" placeholder="Product Price" id="pprice" required="required" runat="server">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="pname" placeholder="Product Old Price" id="poprice" required="required" runat="server">
+								<input class="input" type="text" name="poprice" placeholder="Product Old Price" id="poprice" required="required" runat="server">
 							</div>
 							<div class="form-group">
-								<input class="input" type="text" name="imagelink" placeholder="Product Status" id="pstatus" required="required" runat="server">
+								<input class="input" type="text" name="pstatus" placeholder="Product Status" id="pstatus" required="required" runat="server">
 							</div>
 							<div class="form-group">
 								<input class="input" type="text" name="imagelink" placeholder="Image link" id="imagelink" required="required" runat="server">
@@ -54,7 +54,8 @@
 						<!-- <a href="#" class="primary-btn order-submit">Register</a> -->
 						<form id="AddProd"  runat="server">
 
-						<asp:Button ID="btnAddP" runat="server" Text="Add product" href="#" class="primary-btn order-submit"/>
+						<asp:Button ID="btnAddP" runat="server" Text="Add product" href="#" class="primary-btn order-submit" OnClick="btnAddP_Click"/>
+							<asp:Label ID="lblProductMessage" runat="server" Text=""></asp:Label>
 						</form>
 							
 						

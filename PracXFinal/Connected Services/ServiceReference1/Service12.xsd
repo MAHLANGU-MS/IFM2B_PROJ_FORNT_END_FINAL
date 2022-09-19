@@ -101,6 +101,20 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="editProduct">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="u" nillable="true" type="q4:Product" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editProductResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editProductResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="removeProduct">
     <xs:complexType>
       <xs:sequence>
@@ -125,7 +139,11 @@
   <xs:element name="getProductResponse">
     <xs:complexType>
       <xs:sequence>
+<<<<<<< HEAD
         <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getProductResult" nillable="true" type="q7:Product" />
+=======
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getProductResult" nillable="true" type="q5:Product" />
+>>>>>>> 843d56eb801f38200db79d0f695120fcaca6eacd
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -137,7 +155,11 @@
   <xs:element name="getAllProductsResponse">
     <xs:complexType>
       <xs:sequence>
+<<<<<<< HEAD
         <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsResult" nillable="true" type="q8:ArrayOfProduct" />
+=======
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsResult" nillable="true" type="q6:ArrayOfProduct" />
+>>>>>>> 843d56eb801f38200db79d0f695120fcaca6eacd
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -149,7 +171,11 @@
   <xs:element name="getAllProductsAlphabeticallyResponse">
     <xs:complexType>
       <xs:sequence>
+<<<<<<< HEAD
         <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsAlphabeticallyResult" nillable="true" type="q9:ArrayOfProduct" />
+=======
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsAlphabeticallyResult" nillable="true" type="q7:ArrayOfProduct" />
+>>>>>>> 843d56eb801f38200db79d0f695120fcaca6eacd
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -161,7 +187,11 @@
   <xs:element name="getAllProductsByPriceResponse">
     <xs:complexType>
       <xs:sequence>
+<<<<<<< HEAD
         <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsByPriceResult" nillable="true" type="q10:ArrayOfProduct" />
+=======
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsByPriceResult" nillable="true" type="q8:ArrayOfProduct" />
+>>>>>>> 843d56eb801f38200db79d0f695120fcaca6eacd
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -176,21 +206,33 @@
   <xs:element name="getAllProductsPriceFilteredResponse">
     <xs:complexType>
       <xs:sequence>
+<<<<<<< HEAD
         <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsPriceFilteredResult" nillable="true" type="q11:ArrayOfProduct" />
+=======
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsPriceFilteredResult" nillable="true" type="q9:ArrayOfProduct" />
+>>>>>>> 843d56eb801f38200db79d0f695120fcaca6eacd
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="getAllProductsCategoryFiltered">
     <xs:complexType>
       <xs:sequence>
+<<<<<<< HEAD
         <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="aORnORe" type="q12:char" />
+=======
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="aORnORe" type="q10:char" />
+>>>>>>> 843d56eb801f38200db79d0f695120fcaca6eacd
       </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="getAllProductsCategoryFilteredResponse">
     <xs:complexType>
       <xs:sequence>
+<<<<<<< HEAD
         <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsCategoryFilteredResult" nillable="true" type="q13:ArrayOfProduct" />
+=======
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllProductsCategoryFilteredResult" nillable="true" type="q11:ArrayOfProduct" />
+>>>>>>> 843d56eb801f38200db79d0f695120fcaca6eacd
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -202,6 +244,7 @@
   <xs:element name="getAllDiscountedProductsResponse">
     <xs:complexType>
       <xs:sequence>
+<<<<<<< HEAD
         <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllDiscountedProductsResult" nillable="true" type="q14:ArrayOfProduct" />
       </xs:sequence>
     </xs:complexType>
@@ -245,6 +288,9 @@
     <xs:complexType>
       <xs:sequence>
         <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="existingInvoicesResult" nillable="true" type="q17:ArrayOfInvoice" />
+=======
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/TeamweDev_GP_Service" minOccurs="0" name="getAllDiscountedProductsResult" nillable="true" type="q12:ArrayOfProduct" />
+>>>>>>> 843d56eb801f38200db79d0f695120fcaca6eacd
       </xs:sequence>
     </xs:complexType>
   </xs:element>
